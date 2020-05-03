@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h4">12sp</dimen>
+    <dimen name="h3">16sp</dimen>
+    <dimen name="h2">24sp</dimen>
+    <dimen name="h1">32sp</dimen>
+
+    <dimen name="tiny">4dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="medium">16dp</dimen>
+    <dimen name="large">32dp</dimen>
+    <dimen name="huge">64dp</dimen>
+    <dimen name="giant">128dp</dimen>
+</resources>

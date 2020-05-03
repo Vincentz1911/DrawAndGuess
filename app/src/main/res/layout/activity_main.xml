@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/lv_players"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/small"
+        android:layout_weight="1" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_margin="@dimen/small"
+        android:layout_weight="1">
+
+        <TextView
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="@dimen/h2" />
+
+        <TableRow>
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button android:id="@+id/btn_credits" />
+
+                <TextView android:id="@+id/txt_language" />
+
+                <Spinner android:id="@+id/spn_language" />
+
+                <TextView android:id="@+id/txt_points" />
+
+                <NumberPicker
+                    android:id="@+id/np_points"
+                    android:layout_margin="@dimen/small"
+                    android:layout_weight="1"
+                    android:theme="@style/NumberPickerText" />
+
+                <TextView android:id="@+id/txt_preview" />
+
+                <NumberPicker
+                    android:id="@+id/np_preview"
+                    android:layout_margin="@dimen/small"
+                    android:layout_weight="1"
+                    android:theme="@style/NumberPickerText" />
+
+                <Button android:id="@+id/btn_play" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button android:id="@+id/btn_reset" />
+
+                <TextView android:id="@+id/txt_canvas" />
+
+                <Spinner android:id="@+id/spn_canvas" />
+
+                <TextView android:id="@+id/txt_retries" />
+
+                <NumberPicker
+                    android:id="@+id/np_retries"
+                    android:layout_margin="@dimen/small"
+                    android:layout_weight="1"
+                    android:theme="@style/NumberPickerText" />
+
+                <TextView android:id="@+id/txt_drawing" />
+
+                <NumberPicker
+                    android:id="@+id/np_drawing"
+                    android:layout_margin="@dimen/small"
+                    android:layout_weight="1"
+                    android:theme="@style/NumberPickerText" />
+
+                <Button android:id="@+id/btn_join" />
+            </TableLayout>
+        </TableRow>
+    </TableLayout>
+
+    <GridView
+        android:id="@+id/gv_category"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/small"
+        android:layout_weight="1" />
+</TableRow>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Draw\'n\'Guess</string>
+
+    <string name="image_grid_title">Images in %s category</string>
+
+    <string name="hint_times_up">Time is up!</string>
+    <string name="hint_reveal">Click Reveal if Drawing is Guessed</string>
+    <string name="hint_award_points">Award Points if Drawing was guessed</string>
+    <string name="hint_click_draw">Click Draw or wait timer</string>
+    <string name="hint_get_ready">Get Ready to Draw!</string>
+    <string name="hint_start">Pick a Difficulty and Preview Image</string>
+
+</resources>
+

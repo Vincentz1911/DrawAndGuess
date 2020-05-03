@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D8D7D7</color>
+    <color name="colorPrimaryDark">#9C9C9C</color>
+    <color name="colorAccent">#E38B20</color>
+    <color name="Transparent">@android:color/transparent</color>
+    <color name="colorDisabled">#1AFF0000</color>
+    <color name="ic_launcher_background">#005DDC</color>
+
+    <color name="Yellow">#FFFF00</color>
+    <color name="Orange">#FF7700</color>
+    <color name="Red">#FF0000</color>
+    <color name="DarkRed">#800000</color>
+    <color name="Brown">#CA6537</color>
+    <color name="DarkBrown">#874E33</color>
+    <color name="Purple">#770077</color>
+    <color name="Magenta">#FF00FF</color>
+    <color name="Pink">#FF77FF</color>
+    <color name="Violet">#7700FF</color>
+    <color name="DarkBlue">#000077</color>
+    <color name="Blue">#0000FF</color>
+    <color name="LightBlue">#0077FF</color>
+    <color name="Cyan">#00FFFF</color>
+    <color name="Green">#00FF00</color>
+    <color name="DarkGreen">#007700</color>
+    <color name="Grey">#9A9A9A</color>
+    <color name="DarkGrey">#595959</color>
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+</resources>

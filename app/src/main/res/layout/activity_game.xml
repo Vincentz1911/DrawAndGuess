@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/txt_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/small"
+        android:textSize="@dimen/h2" />
+
+    <ImageView
+        android:id="@+id/img_picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/txt_hint"
+        android:layout_below="@id/txt_picture"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/lay_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <ListView
+        android:id="@+id/lv_scoreboard"
+        android:layout_width="@dimen/giant"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/txt_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/small"
+        android:layout_toEndOf="@id/lv_scoreboard"
+        android:gravity="center"
+        android:textSize="@dimen/h2" />
+
+    <TextView
+        android:id="@+id/txt_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/large"
+        android:layout_toStartOf="@id/lay_clock_buttons"
+        android:layout_toEndOf="@id/lv_scoreboard"
+        android:gravity="center"
+        android:padding="@dimen/large"
+        android:textSize="@dimen/h1" />
+
+    <!--CLOCK AND BUTTON-->
+    <LinearLayout
+        android:id="@+id/lay_clock_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:minWidth="@dimen/giant"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/h1" />
+
+        <Button
+            android:id="@+id/btn_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/h2" />
+    </LinearLayout>
+
+    <!--DIFFICULTY-->
+    <LinearLayout
+        android:id="@+id/lay_difficulty"
+        android:layout_width="@dimen/giant"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txt_hint"
+        android:layout_below="@+id/lay_clock_buttons"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btn_easy"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Green"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/tiny"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_easy" />
+
+            <ImageButton
+                android:id="@+id/btn_normal"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Yellow"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/tiny"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_normal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btn_hard"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Red"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/tiny"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_hard" />
+
+            <ImageButton
+                android:id="@+id/btn_random"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/Grey"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/tiny"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_random" />
+        </TableRow>
+    </LinearLayout>
+
+    <!--TOOLS-->
+    <LinearLayout
+        android:id="@+id/lay_tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_clear"
+            android:layout_width="@dimen/huge"
+            android:layout_height="@dimen/huge"
+            android:background="@color/Transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_paint" />
+
+        <ImageButton
+            android:id="@+id/btn_color"
+            android:layout_width="@dimen/huge"
+            android:layout_height="@dimen/huge"
+            android:background="@color/Transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_palette" />
+
+        <ImageButton
+            android:id="@+id/btn_size"
+            android:layout_width="@dimen/huge"
+            android:layout_height="@dimen/huge"
+            android:background="@color/Transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_line_weight" />
+    </LinearLayout>
+</RelativeLayout>
